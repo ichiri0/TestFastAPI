@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from api.api_v1.routers.notes.service import get_note_by_id, get_notes_by_user_id
+from api.v1.routers.notes.service import get_note_by_id, get_notes_by_user_id
 
 router = APIRouter(prefix="/notes", tags=["notes"])
 

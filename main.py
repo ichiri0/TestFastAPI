@@ -5,8 +5,8 @@ from fastapi import FastAPI
 import uvicorn
 
 import settings
-from api.api_v1.routers.users.controller import router as users_router
-from api.api_v1.routers.notes.controller import router as notes_router
+from api.v1.routers.users.controller import router as users_router
+from api.v1.routers.notes.controller import router as notes_router
 
 
 init(autoreset=True)
