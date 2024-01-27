@@ -6,6 +6,7 @@ import uvicorn
 
 import settings
 from api.api_v1.routers.users.controller import router as users_router
+from api.api_v1.routers.notes.controller import router as notes_router
 
 
 init(autoreset=True)
@@ -15,6 +16,7 @@ color_error = Fore.RED
 
 app = FastAPI(title="Заметки")
 app.include_router(users_router)
+app.include_router(notes_router)
 
 
 if __name__ == "__main__":
