@@ -6,10 +6,10 @@ router = APIRouter(prefix="/users", tags=["users"])
 
 
 @router.get("/get-users")
-async def read_tariff(tariff_id: int):
-    return await get_user(tariff_id)
+async def read_user(user_id: int):
+    return await get_user(user_id)
 
 
 @router.get("/get-all-users")
-async def read_all_tariffs():
+async def read_all_users():
     return await get_all_users()
